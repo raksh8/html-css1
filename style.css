@@ -1,0 +1,35 @@
+*{
+    margin: 4px;
+    
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    border: 0;
+    padding: 0;
+    background-image: url(./pexels-buğra-doğan-3561946.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    color : palevioletred;
+}
+
+.menu{
+    display: inline-block;
+    width: 62px;
+    color:wheat;
+    border-radius: 17px;
+    text-align: center;
+    font-style: initial;
+    background: rgb(133, 51, 165);
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    right: 0%;
+}
