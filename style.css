@@ -29,7 +29,7 @@ body{
     padding: 8px;
 }
 
-.menu ul li .contact_us{
+#contact_us{
     width: 170px;
 }
 
@@ -41,4 +41,54 @@ body{
 .active, .menu ul li:hover{
     background-color: yellowgreen;
     border-radius: 4px;
+}
+
+.sub_menu,.sub_contact, .sub_about{
+    display: none;
+    /* position: absolute; */
+}
+
+.menu ul li:hover .sub_menu{
+    display: block;
+    position: absolute;
+    background: cadetblue;
+}
+
+.menu ul li:hover .sub_menu ul{
+    display: block;
+    margin: 8px ;
+    
+}
+.sub_menu ul li:hover{
+border: 1px solid blueviolet;
+}
+
+.menu ul li:hover .sub_contact{
+    display: block;
+    position: absolute;
+    background: cadetblue;
+}
+
+.menu ul li:hover .sub_contact ul{
+    display: block;
+    margin: 8px ;
+    
+}
+.sub_contact ul li:hover{
+border: 1px solid blueviolet;
+}
+
+.menu ul li:hover .sub_about{
+    display: block;
+    position: absolute;
+    background: cadetblue;
+}
+
+.menu ul li:hover .sub_about ul{
+    display: block;
+    margin: 8px ;
+    
+}
+.sub_about ul li:hover{
+border: 1px solid blueviolet;
 }
