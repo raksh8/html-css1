@@ -1,35 +1,44 @@
 *{
-    margin: 4px;
-    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.main{
-    width: 100vw;
-    height: 100vh;
-    margin: 0%;
-    border: 0;
-    padding: 0;
-    background-image: url(./pexels-buğra-doğan-3561946.jpg) ;
-    background-repeat: no-repeat;
+body{
+    background-image: url(./pexels-fotografierende-3235566.jpg);
     background-size: cover;
-}
-.logo{
-    position: fixed;
-    top: 0;
-    left: 0;
-    color : palevioletred;
+    /* background-position: center; */
+    
+    font-family: sans-serif;
 }
 
 .menu{
-    display: inline-block;
-    width: 62px;
-    color:wheat;
-    border-radius: 17px;
+    background-color: cadetblue;
     text-align: center;
-    font-style: initial;
-    background: rgb(133, 51, 165);
-    text-transform: uppercase;
-    position: fixed;
-    top: 0;
-    right: 0%;
+}
+.menu ul{
+     display: inline-flex;
+     list-style: none;
+     color: whitesmoke;
+ }
+
+.menu ul li{
+    text-transform: capitalize;
+    width: 116px;
+    margin: 8px;
+    padding: 8px;
+}
+
+.menu ul li .contact_us{
+    width: 170px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.active, .menu ul li:hover{
+    background-color: yellowgreen;
+    border-radius: 4px;
 }
