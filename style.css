@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@viewport{
+    zoom: 1;
+    width: extend-to-zoom;
+}
+
 body {
   background-image: url(./pexels-fotografierende-3235566.jpg);
   background-size: cover;
