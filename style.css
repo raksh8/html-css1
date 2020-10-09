@@ -1,95 +1,126 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: url(./pexels-fotografierende-3235566.jpg);
-    background-size: cover;
-    /* background-position: center; */
-    
-    font-family: sans-serif;
-    transition: 0.8s ease;
+body {
+  background-image: url(./pexels-fotografierende-3235566.jpg);
+  background-size: cover;
+  /* background-position: center; */
+
+  font-family: sans-serif;
+  transition: 0.8s ease;
 }
 
-.menu{
-    background-color: cadetblue;
-    text-align: center;
+.menu {
+  background-color: cadetblue;
+  text-align: center;
 }
-.menu ul{
-     display: inline-flex;
-     list-style: none;
-     color: whitesmoke;
- }
-
-.menu ul li{
-    text-transform: capitalize;
-    width: 116px;
-    margin: 8px;
-    padding: 8px;
+.menu ul {
+  display: inline-flex;
+  list-style: none;
+  color: whitesmoke;
 }
 
-#contact_us{
-    width: 170px;
+.menu ul li {
+  text-transform: capitalize;
+  width: 116px;
+  margin: 8px;
+  padding: 8px;
 }
 
-.menu ul li a{
-    text-decoration: none;
-    color: whitesmoke;
+#contact_us {
+  width: 170px;
 }
 
-.active, .menu ul li:hover{
-    background-color: yellowgreen;
-    border-radius: 4px;
+.menu ul li a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-.sub_menu,.sub_contact, .sub_about{
+.active,
+.menu ul li:hover {
+  background-color: yellowgreen;
+  border-radius: 4px;
+}
+
+.sub_menu,
+.sub_contact,
+.sub_about {
+  display: none;
+  /* position: absolute; */
+}
+
+.menu ul li:hover .sub_menu {
+  display: block;
+  position: absolute;
+  background: cadetblue;
+}
+
+.menu ul li:hover .sub_menu ul {
+  display: block;
+  margin: 8px;
+}
+.sub_menu ul li:hover {
+  border: 1px solid gray;
+}
+
+.menu ul li:hover .sub_contact {
+  display: block;
+  position: absolute;
+  background: cadetblue;
+}
+
+.menu ul li:hover .sub_contact ul {
+  display: block;
+  margin: 8px;
+}
+.sub_contact ul li:hover {
+  border: 1px solid blueviolet;
+}
+
+.menu ul li:hover .sub_about {
+  display: block;
+  position: absolute;
+  background: cadetblue;
+}
+
+.menu ul li:hover .sub_about ul {
+  display: block;
+  margin: 8px;
+}
+.sub_about ul li:hover {
+  border: 1px solid blueviolet;
+}
+
+
+.main-nav{
+    display: inline-block;
+    background-color: rgb(52, 63, 35);
+    color: wheat;
+}
+.main-nav :link{
+  text-decoration: none;
+  list-style: none;
+}
+
+.main-nav a{
+    color: wheat;
+    display : block;
+    padding: 10px;
+    border-bottom: 1px dotted gray;
+}
+
+.main-nav a:hover{
+    background-color: rgba(112, 112, 47, 0.623);
+}
+
+.main-nav ul{
     display: none;
-    /* position: absolute; */
+    transition: 0.8s;
 }
 
-.menu ul li:hover .sub_menu{
+.main-nav :hover ul{
     display: block;
-    position: absolute;
-    background: cadetblue;
-}
-
-.menu ul li:hover .sub_menu ul{
-    display: block;
-    margin: 8px ;
-    
-}
-.sub_menu ul li:hover{
-border: 1px solid blueviolet;
-}
-
-.menu ul li:hover .sub_contact{
-    display: block;
-    position: absolute;
-    background: cadetblue;
-}
-
-.menu ul li:hover .sub_contact ul{
-    display: block;
-    margin: 8px ;
-    
-}
-.sub_contact ul li:hover{
-border: 1px solid blueviolet;
-}
-
-.menu ul li:hover .sub_about{
-    display: block;
-    position: absolute;
-    background: cadetblue;
-}
-
-.menu ul li:hover .sub_about ul{
-    display: block;
-    margin: 8px ;
-    
-}
-.sub_about ul li:hover{
-border: 1px solid blueviolet;
 }
